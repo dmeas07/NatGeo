@@ -4,66 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My National Geographics</title>
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>My National Geographics</title>
 
 </head>
-<body>
-    <nav>
-        <img src="img/ng-border.png" alt="Nat Geo border">
-        <img src="img/ng-logo-2fl.webp" alt="Nat Geo logo">
-        <a href="#" class="login-link">Login</a>
-        <a href="#" class="search-link"><i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-        <a href="#" class="news-link">Newsleters</a>
-        <a href="#" class="subs-link">Subscribe</a>
-        <a href="#" class="menu-link">Menu</a> <i class="fa-solid fa-angles-down"></i>
 
+<body>
+    <nav class="menu">
+        <img class="natgeo-frame"src="img/ng-border.png" alt="Nat Geo border">
+        <img class="natgeo-logo"src="img/ng-logo-2fl.webp" alt="Nat Geo logo">
+        
+        <div>
+            <a href="#" 
+            class="login-link">Login</a>
+            <a href="#" class="search-link"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="news-link">Newsletters</a>
+            <a href="#" class="subs-link">Subscribe</a>
+            <a href="#" class="menu-link"><span>Menu</span> </a> <i class="fa-solid fa-angles-down"></i>
+        </div>
 
     </nav>
     
     <header>
-        <p class="title">LATEST STORIES</p>
+        <div>
+            <p class="title">LATEST STORIES</p>
+        </div>
+
         <p class="description"><span>Subscribe</span> for full access to read stories from National Geographic.
         </p>
+
         <div class="border"></div>
+
     </header>
 
     <main>
         <section class="main-news">
-            <img src="img/border villages.webp" alt="border villages">
-            <h3>History & Culture</h3>
-            <p>These border villages still struggle 75 years...</p>
-            <h4><i class="fa-solid fa-bars"></i>
-                READ</h4>
+
+            <img src="img/border villages.webp" 
+            alt="border villages">
+
+            <div class="main-news-text">
+                <h3>History & Culture</h3>
+                <p>These border villages still struggle 75 years...</p>
+                <h4><i class="fa-solid fa-bars"></i>
+                    READ</h4>
+            </div>
+
        </section>
+
        <!-- end of main news -->
 
        <section class="secondary-news">
-            <img src="img/dead sea scroll.jpg" alt="deadsea scroll">
-            <h3>HISTORY MAGAZINE</h3>
-            <p>Who wrote the Dead Sea scholls? Science may have the answer</p>
-            <h4><i class="fa-solid fa-bars"></i>
+
+            <img src="img/dead sea scroll 2.webp" alt="deadsea scroll">
+
+            <div class="secondary-news-text">
+                <h3>HISTORY MAGAZINE</h3>
+                <p>Who wrote the Dead Sea scrolls? Science may have the answer</p>
+                <h4><i class="fa-solid fa-bars"></i>
                 READ</h4>
+            </div>
+
         </section>
         
-        <section class="secondary-news">
+        <section class="tertiary-news">
             <img src="img/cox bazar.webp" alt="cox bazar">
-            <h3>MAGAZINE</h3>
-            <p>Cox's Bazar, known as a refugee camp, is also a vacation site</p>
-            <h4><i class="fa-solid fa-bars"></i>
-                READ</h4>
+
+            <div class="tertiary-news-text">
+                <h3>MAGAZINE</h3>
+                <p>Cox's Bazar, known as a refugee camp, is also a vacation site</p>
+                <h4><i class="fa-solid fa-bars"></i>
+                    READ</h4>
+            </div>
         </section>
 
     </main>
 
     <section class="todays-picks">
 
-        <h2>TODAY"S PICKS</h2>
+        <h2>TODAY'S PICKS</h2>
+
         <div class="picks-elements">
+
             <img src="img/historical climate bill.webp" alt="todays picks">
-            <h3>ENIVRONMENT <span>PLANET POSSIBLE</span></h3>
-            <p>How the climate bill will dramatically cut U.S. emissions</p>
+
+            <div class="picks-elements-text">
+                <h3>ENIVRONMENT <span>PLANET POSSIBLE</span></h3>
+                <p>How the climate bill will dramatically cut U.S. emissions</p>
+            </div>
         </div>
 
     </section>
