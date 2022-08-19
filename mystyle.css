@@ -1,6 +1,5 @@
 /* global */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
 *{
     margin: 0;
     margin-left: 3px;
@@ -19,7 +18,6 @@ body{
 
 img{
     max-width: 100%;
-
 }
 
 a{
@@ -32,7 +30,13 @@ h2,h3,h4{
 }
 /* utilities */
 
+.container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* navigation */
+
 nav.menu{
     display: flex;
     justify-content: space-between;
@@ -122,10 +126,11 @@ p.description{
 
 .description span{
     border-bottom: 2px solid goldenrod;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
 }
 
 .description span:hover{
+    background-image: linear-gradient(to bottom black 50% goldenrod 50% top);
     background-color: goldenrod;
     color: black;
     transition: ease .5s;
@@ -170,7 +175,7 @@ p.div border{
 }
 
 .main-news-text p{
-    display: flex;
+    
     width: 100%;
     white-space: normal;
     font-size: 39px;
@@ -217,6 +222,11 @@ p.div border{
     line-height: 0;
 }
 
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .secondary-news-text h4{
     font-size: 13px;
     letter-spacing: 3px;
@@ -248,7 +258,8 @@ p.div border{
     transform: scale(1.1);
     box-shadow: 3px 0px goldenrod;
     border-bottom: 10px;
-    transition: 0.3s ease
+    transition: 0.3s ease;
+    cursor: pointer
     
 }
 
@@ -259,13 +270,13 @@ p.div border{
     overflow: hidden;
     margin: 4px;
     color: white;
-    padding-top: 190px;
+    padding-top: 147px;
     box-shadow: 3px 0px goldenrod
 }
 
 .tertiary-news-text{
     position: absolute;
-    top: 188.8%;
+    top: 184%;
     overflow: hidden;
     width: 448px;
     box-shadow: 3px 3px goldenrod
@@ -276,6 +287,11 @@ p.div border{
     letter-spacing: 3px;
     margin: 15px;
     line-height: 0;
+}
+
+.tertiary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .tertiary-news-text h4{
@@ -294,40 +310,84 @@ p.div border{
     margin: 15px;
     line-height: 25px;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     
 }
 .tertiary-news img{
     transition: 0.2s ease;
-    width: 100%;
+    width: 99.3%;
     height: 100%;
     position: relative;
 }
 
 .tertiary-news:hover img{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* today's picks */
 
 .todays-picks{
-    padding-top: 190px;
+    padding-top: 200px;
     color: white;
 }
 
+.picks-elements{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .todays-picks h2{
-    padding-left: 25px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    border-left: 5px solid goldenrod;
+}
+
+.todays-picks h3{
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 4px;
+    line-height: 25px;
+}
+
+.todays-picks h3 span{
+    font-weight: 100;
+}
+
+.todays-picks p{
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 .todays-picks img{
     width: 90px;
-    
+    margin-bottom: 30px;
 }
-.picks-elements-text{
-    padding-left: 25%;
-    bottom: 40%;
 
+.picks-elements-text{
+    color: white;
+    padding: 10px;
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.see-more h3{
+    border-bottom: 2px solid goldenrod;
+    max-width: 100px;
+}
+
+.see-more h3:hover{
+    background-image: linear-gradient(to bottom black 50% goldenrod 50% top);
+    background-color: goldenrod;
+    color: black;
+    transition: ease .5s;
+    font-weight: bold;
 }
